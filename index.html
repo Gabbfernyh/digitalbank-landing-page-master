@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/css/reset.css">
-  <link rel="stylesheet" href="/src/css/style.css">
-  <link rel="stylesheet" href="/src/css/response.css">
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/response.css">
   <link rel="icon" type="image/x-icon" href="/src/assets/imgs/favicon.ico">
   <title>Digital bank landing page</title>
 
@@ -15,7 +15,9 @@
 
 <body>
   <header>
-    <img src="./src/assets/imgs/logo-dark.svg" alt="Logo do banco" class="logo">
+    <div class="logodark">
+      <img src="./src/assets/imgs/logo-dark.svg" alt="Logo do banco" class="logo">
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -30,44 +32,70 @@
   <main>
     <section class="hero">
       <div class="texthero">
-        <h1>Next generation digital banking</h1>
+        <h2>Next generation digital banking</h2>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
           budgeting, investing, and much more.</p>
         <a href="#" class="btn">Request Invite</a>
       </div>
       <div class="imghero">
-        <img src="./src/assets/imgs/image-mockups.png" alt="Imagem de celulares com o app do banco">
+        <img src="./src/assets/imgs/image-mockups.png" alt="Imagem de celulares com o app do banco"
+          class="phone-deskhero">
     </section>
-    <section>
-      <div class="text-s2">
+    <section class="features">
+      <div class="text-features-header">
         <h2>Why choose Easybank?</h2>
-        <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like
+        <p class="text-features-info">We leverage Open Banking to turn your bank account into your financial hub. Control
+          your finances like
           never before.</p>
       </div>
+      <br>
       <div class="cards-features">
         <div class="card-feature">
-          <img src="./src/assets/imgs/icon-online.svg" alt="Icone de um computador">
-          <h3>Online Banking</h3>
-          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
-            world.</p>
+          <div class="features-imgs">
+            <img src="./src/assets/imgs/icon-online.svg" alt="Icone de um computador">
+          </div>
+          <div class="text-cards-features">
+            <h3>Online Banking</h3>
+            <p class="text-features">Our modern web and mobile applications allow you to keep track of your finances
+              wherever you are in
+              the
+              world.</p>
+          </div>
         </div>
         <div class="card-feature">
-          <img src="./src/assets/imgs/icon-budgeting.svg" alt="Icone de um cofrinho">
-          <h3>Simple Budgeting</h3>
-          <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your
-            limits.</p>
+          <div class="features-imgs">
+            <img src="./src/assets/imgs/icon-budgeting.svg" alt="Icone de um cofrinho">
+          </div>
+          <div class="text-cards-features">
+            <h3>Simple Budgeting</h3>
+            <p class="text-features">See exactly where your money goes each month. Receive notifications when you’re
+              close to hitting
+              your
+              limits.</p>
+          </div>
         </div>
         <div class="card-feature">
-          <img src="./src/assets/imgs/icon-onboarding.svg" alt="Icone de um foguete">
-          <h3>Fast Onboarding</h3>
-          <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right
-            away.</p>
+          <div class="features-imgs">
+            <img src="./src/assets/imgs/icon-onboarding.svg" alt="Icone de um foguete">
+          </div>
+          <div class="text-cards-features">
+            <h3>Fast Onboarding</h3>
+            <p class="text-features">We don’t do branches. Open your account in minutes online and start taking control
+              of your finances right
+              away.</p>
+          </div>
         </div>
         <div class="card-feature">
-          <img src="./src/assets/imgs/icon-api.svg" alt="Icone de uma engrenagem">
-          <h3>Open API</h3>
-          <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never
-            been easier.</p>
+          <div class="features-imgs">
+            <img src="./src/assets/imgs/icon-api.svg" alt="Icone de uma engrenagem">
+          </div>
+          <div class="text-cards-features">
+            <h3>Open API</h3>
+            <p class="text-features">Manage your savings, investments, pension, and much more from one account. Tracking
+              your money has
+              never
+              been easier.</>
+          </div>
         </div>
       </div>
     </section>
@@ -77,39 +105,51 @@
       </div>
       <div class="cards-articles">
         <div class="card-article">
-          <img src="./src/assets/imgs/image-currency.jpg" alt="Imagem de uma moeda">
+          <div class="img-articles">
+            <img src="./src/assets/imgs/image-currency.jpg" alt="Imagem de uma moeda">
+          </div>
           <div class="info-article">
             <p class="author">By Claire Robinson</p>
             <h3>Receive money in any currency with no fees</h3>
-            <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive
-              money in a single …</p>
+            <article>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only
+              receive
+              money in a single …</article>
           </div>
         </div>
         <div class="card-article">
+          <div class="img-articles">
           <img src="./src/assets/imgs/image-restaurant.jpg" alt="Imagem de um restaurante">
+          </div>
           <div class="info-article">
             <p class="author">By Wilson Hutton</p>
             <h3>Treat yourself without worrying about money</h3>
-            <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each
-              month. That means you …</p>
+            <article>Our simple budgeting feature allows you to separate out your spending and set realistic limits
+              each
+              month. That means you …</article>
           </div>
         </div>
         <div class="card-article">
-          <img src="./src/assets/imgs/image-plane.jpg" alt="Imagem de um avião">
+          <div class="img-articles">
+            <img src="./src/assets/imgs/image-plane.jpg" alt="Imagem de um avião">
+          </div>
           <div class="info-article">
             <p class="author">By Wilson Hutton</p>
             <h3>Take your Easybank card wherever you go</h3>
-            <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad.
-              We’ll even show you …</p>
+            <article>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re
+              abroad.
+              We’ll even show you …</article>
           </div>
         </div>
         <div class="card-article">
-          <img src="./src/assets/imgs/image-confetti.jpg" alt="Imagem de confetes">
+          <div class="img-articles">
+            <img src="./src/assets/imgs/image-confetti.jpg" alt="Imagem de confetes">
+          </div>
           <div class="info-article">
             <p class="author">By Claire Robinson</p>
             <h3>Our invite-only Beta accounts are now live!</h3>
-            <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request
-              an invite through the site ...</p>
+            <article>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to
+              request
+              an invite through the site ...</article>
           </div>
         </div>
       </div>
